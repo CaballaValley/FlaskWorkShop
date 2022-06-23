@@ -47,7 +47,7 @@ def insert_animals():
     return data
 
 
-@app.route('/<animal>', methods=['GET'])
+@app.route('/animals/<animal>', methods=['GET'])
 def random_remote_animals(animal):
     data = {'species': []}
     if request.method == 'GET':
